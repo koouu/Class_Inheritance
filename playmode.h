@@ -3,12 +3,12 @@
 class PlayMode :public ModeBase
 {
 private:
-
+int music_num;
 public:
 
-	PlayMode();
+	PlayMode(int music_num);
 	~PlayMode();
-	EGameModeStatus Process(int music_num);
+	EGameModeStatus Process();
 	bool Draw();
 };
 

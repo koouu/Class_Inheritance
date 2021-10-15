@@ -2,7 +2,7 @@
 #include "playmode.h"
 
 int main(){
-    ModeBase *mode=new SelectMode();
+    ModeBase *mode=new SelectMode(10);
     EGameModeStatus state=eSelectMode;
     bool gameflag=1;
     while(gameflag){
@@ -12,8 +12,8 @@ int main(){
         delete mode;mode = nullptr;
         switch (state)
         {
-        case eSelectMode:		mode = new SelectMode(); break;
-        case ePlayMode:		    mode = new PlayMode(); break;
+        case eSelectMode:		mode = new SelectMode(10); break;
+        case ePlayMode:		    mode = new PlayMode(1); break;
         case eEnd:				gameflag=0; break;
         default:				gameflag=0; break;
         }

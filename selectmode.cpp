@@ -11,6 +11,9 @@ EGameModeStatus SelectMode::Process(){
     /*
         セレクト画面の処理を書く
     */
+    
+    
+    
     //曲が選ばれたら
     return ePlayMode;
 
@@ -18,7 +21,7 @@ EGameModeStatus SelectMode::Process(){
     return eEnd;
 
     //入力がなければ
-    return eSelectMode
+    return eSelectMode;
 }
 
 bool SelectMode::Draw(){

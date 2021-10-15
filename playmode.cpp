@@ -1,13 +1,13 @@
 #include "playmode.h"
 
-PlayMode::PlayMode(){
-
+PlayMode::PlayMode(int music_num){
+    this->music_num=music_num;
 }
 PlayMode::~PlayMode(){
 
 }
 
-EGameModeStatus PlayMode::Process(int music_num){
+EGameModeStatus PlayMode::Process(){
 
 }
 
